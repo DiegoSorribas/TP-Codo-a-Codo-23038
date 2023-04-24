@@ -15,6 +15,7 @@
     background-color:#fae9dca8;
     position: sticky;
     top: 0;
+   ;
 }
 
 #navegadorbox{
@@ -310,8 +311,35 @@ padding-bottom: 2em;}
     background-color: #006769;
     transition: 0.2s ease;
 }
+/*AGREGO BOTON PARA "VOLVER"*/
+#volver{
+    height: 6em;
+    background-color:#fae9dca8;
+    display: flex;
+}
+.boton-bodegon1 {
+    color:#fce7de;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.6em;
+    background-color:#00909B ;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-flex;
+    margin-top: 25px;
+    justify-content: center;
+    
+    /* margin-top:2em; */
+    
+}
+.boton-bodegon1:hover{
+    transform: scale(0.75);
+}
 
-.texto-bod {padding-bottom: 3.5em;}
+/*--------------------------*/
+
+
+.texto-bod{padding-bottom: 3.5em;}
 
 
 /*#contenedor{
@@ -501,7 +529,8 @@ footer {
     background-color: #006769;
     color: white;
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 2em;/*2*/
+    
 }
 
 
@@ -523,7 +552,7 @@ footer {
 
 
 #img-1-nosotros {
-    background: #000 url(./recursos/nosotros1.jpg) no-repeat center top;
+    background: #000 url(./recursos/nosotros1.jpg) ;
     width: 50%;
     height:700px;
     margin: 0;
@@ -553,7 +582,8 @@ footer {
 }
 
 .carousel-item{height: 47em;
-color:#000;}
+color:#000;
+}
 
 .titulo-carrusel {text-transform: uppercase;
     color:#ffffff;
