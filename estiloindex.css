@@ -87,8 +87,6 @@
 }
 
 
-
-
 /*------- ---- -----*/
 /*estilos main index*/
 /*------- ---- -----*/
@@ -313,7 +311,6 @@ padding-bottom: 2em;}
 
 .texto-bod {padding-bottom: 3.5em;}
 
-
 /*#contenedor{
     display: flex;
     flex-wrap: wrap;
@@ -324,6 +321,7 @@ padding-bottom: 2em;}
 
 .main-contacto{
     background-color: #9c705d;
+    padding: 3em;
 }
 
 #celeste {background-color:#002b2c}
@@ -411,16 +409,104 @@ padding-bottom: 2em;}
     background-color: #006769;
     transition: 0.4s ease;
 }
-
+/*
 .main-contacto {padding: 3em;}
-
+*/
 form {
-    width: 35%;
+    width: 75%;
     background-color: #bb8d79;
     border-color:transparent;
     padding: 3em;
     border-radius: 2%;
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 35%);
+}
+
+/*Querys de contacto*/
+/*------ -- --------*/
+
+@media screen and (max-width: 320px) {
+    .main-contacto{
+        display: flex;
+        flex-direction: column;
+        /*flex-wrap:nowrap;*/
+        /*justify-content:space-evenly;*/
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .form {
+        width: 35%;
+        background-color: #bb8d79;
+        border-color:transparent;
+        padding: 3em;
+        border-radius: 2%;
+        box-shadow: 0 1px 10px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 35%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .fieldset {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        background-color: #bb8d79;
+        border-color:transparent;
+        padding: 1em;
+        border-radius: 2%;
+        box-shadow: 0 1px 10px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 35%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #titular {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #bodegon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .circulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #encontranos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #mapa {
+        display:none;
+    }
 }
 
 .block {
@@ -519,8 +605,6 @@ footer {
 .nos{
     background-color:#A34032;
 }
-
-
 
 #img-1-nosotros {
     background: #000 url(./recursos/nosotros1.jpg) no-repeat center top;
