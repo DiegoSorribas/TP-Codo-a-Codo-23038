@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Club del Bodegon</title>
-    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="stylesheet" href="./Styles/estiloindex.css">
     <link rel="icon" href="./recursos/logo chiquito png.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/804bbb64aa.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header>
         <section id="navegadorbox">
             <figure id="logo">
                 <img src="./recursos/logo chiquito png.png">
@@ -21,10 +21,10 @@
 
             <nav>
                 <ul>
-                    <li class="menu"> <a class="nav" href="index.html" >Inicio</a></li>
-                    <li class="menu"> <a class="nav" href="Bodegones.html" >Bodegones</a></li>
-                    <li class="menu"> <a  class="nav" href="nosotros.html" >Nosotros</a></li>
-                    <li class="menu" > <a class="nav" href="contacto.html" id="menu-reserva">Reservas</a></li>
+                    <li class="menu"> <a href="index.html" >Inicio</a></li>
+                    <li class="menu"> <a href="Bodegones.html" >Bodegones</a></li>
+                    <li class="menu"> <a href="nosotros.html" >Nosotros</a></li>
+                    <li class="menu" > <a href="contacto.html" id="menu-reserva">Reservas</a></li>
                 </ul>
             </nav>
         </section>
@@ -38,13 +38,13 @@
                 <section id="titular">
                     <h3 class="sub-form">Titular de la reserva</h3>
                     
-                        <label for="name" class="block"> Su nombre</label>
+                        <label for="name" class="block">Nombre</label>
                         <input type="text" name="name" id="name" required placeholder="Ingrese su nombre" class="form">
 
-                        <label for="apellido" class="block"> Su apellido</label>
+                        <label for="apellido" class="block">Apellido</label>
                         <input type="text" id="apellido" name="apellido"required placeholder="Ingrese su apellido" class="form">
 
-                        <label for="email" class="block">Su mail</label>
+                        <label for="email" class="block">Mail</label>
                         <input type="email" id="email" name="email" required placeholder="Ingrese su mail" class="form">
                     
                 </section>
@@ -75,19 +75,21 @@
                     <h3 class="sub-form">Bodegón elegido</h3>
                     
                     <div class="circulo">
-                        <input type="radio" name="casa" id="casa" class="radio">
-                        <label for="casa" class="circle">Como en casa</label>
-                    
-                        <input type="radio" name="grill" id="grill" class="radio">
-                        <label for="grill" class="circle">Grill House </label>
-                    </div>
-                    <div class="circulo">
-                        <input type="radio" name="profundo" id="profundo" class="radio">
-                        <label for="profundo" class="circle">Plato Profundo </label>
+                        <label for="bodegones"></label>
+                        <div>
+                            <input type="radio" name="bodegon" id="bodegon" value="c">Como en casa
+                        
+                            <input type="radio" name="bodegon" id="bodegon" value="g">GrillHouse 
+                        </div>
 
-                        <input type="radio" name="manolo" id="manolo" class="radio">
-                        <label for="manolo" class="circle">Manolo </label>
+                        <div>
+                            <input type="radio" name="bodegon" id="bodegon" value="p">Plato Profundo 
+                        
+                            <input type="radio" name="bodegon" id="bodegon" value="m">Manolo 
+                        </div> 
                     </div>
+
+                   
                 </section>
 
                 
@@ -102,13 +104,13 @@
             
         </form>
 
-        <section id="encontranos">
-            <article id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.02592900752!2d-58.4743917!3d-34.6540481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9655553e6bd%3A0x9dfd590e4570144d!2sAv.%20Eva%20Per%C3%B3n%204430%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1681336812677!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="contacto">
+            <section id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d52528.54363960134!2d-58.46799538764201!3d-34.628581645830984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-34.6540372!2d-58.4744191!4m5!1s0x95bccaea670d4e67%3A0x2198c954311ad6d9!2sDa%20Vinci%20%7C%20Primera%20Escuela%20de%20Arte%20Multimedial%2C%20Av.%20Corrientes%202037%2C%20C1045%20CABA!3m2!1d-34.6043783!2d-58.3959383!5e0!3m2!1ses-419!2sar!4v1680582471052!5m2!1ses-419!2sar"></iframe>
                 
-            </article>
+            </section>
 
-            <article id="contacto">
+            <section id="contacto">
                 <ul class="list-con">
                     <li class="nombre-list">Llamanos al:</li>
                     <li class="hijo-list">1157420542</li>
@@ -116,16 +118,16 @@
 
                 <ul class="list-con">
                     <li class="nombre-list">Escribinos al:</li>
-                    <li class="hijo-list"> <a id="mail" href="mailto:clubdelbodegon@gmail.com">clubdelbodegon@gmail.com</a></li>
+                    <li class="hijo-list"><a href="mailto:elclubdelbodegon@gmail.com">elclubdelbodegon@gmail.com</a></li>
                 </ul>
 
                 <ul class="list-con">
                     <li class="nombre-list">Encontranos en:</li>
-                    <li class="hijo-list">Av. Eva Perón 4430</li>
+                    <li class="hijo-list">Av. Corrientes 2053</li>
                 </ul>
 
                 
-            </article>
+            </section>
         </section>
     </main>
 
