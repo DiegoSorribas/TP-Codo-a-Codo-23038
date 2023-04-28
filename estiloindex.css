@@ -14,8 +14,8 @@
 .header{
     background-color:#fae9dca8;
     position: sticky;
-    top: 0;
-   ;
+    top: 0
+    ;
 }
 
 #navegadorbox{
@@ -78,8 +78,8 @@
 #logo {
     margin-top: 2em;
     margin-bottom: 2em;
-    margin-left:14em;
-    margin-right: 10.5em;
+    margin-left:12em;
+    margin-right: 5em;
 }
 
 
@@ -261,6 +261,9 @@ background-color: #002b2c;}
     height:700px;
     margin: 0;
 }
+#imagen-dos-celular{width: 0;
+margin: 0;}
+
 
 #art-dos {width:20%}
 
@@ -594,6 +597,7 @@ color:#000;
     font-weight: 700;
 }
 
+<<<<<<< HEAD
 /*******BOTON DESCARGAR MENU*******/
 #adjunto{
     margin-left: -10px ;
@@ -622,5 +626,139 @@ color:#000;
 .letra:hover{
     
     color:#fce7de;
+=======
+@media screen and (max-width:876px) {
+
+    #navegadorbox{display:block;}
+
+    #logo {
+    padding-top: 1.3em;
+    display:flex;
+    margin:0;
+    }
+
+    #nav {
+    display: flex;
+    justify-content: center;}
+
+    .header {
+    position: relative;}
+
+    #razones {
+        max-width:100%
+    }
+
+    .art1{width:30%;}
+
+    #art-dos{width:30%;
+    }
+
+    #art-tres {width:30%;}
+
+    .imagen {
+        background: #000 url(./recursos/pizzaTablet.jpg) no-repeat center top;
+    }
+
+    #imagen-dos {
+        background: #000 url(./recursos/tortillaTablet.jpg) no-repeat center top;
+    }
+
+    #imagen-tres {
+        background: #000 url(./recursos/mousseTablet.jpg) no-repeat center top;
+        }
+}
+
+@media screen and (max-width:584px){
+
+    .header{
+        max-width: 100%;
+        position:relative;
+    }
+
+    #navegadorbox{
+        display: block;
+    }
+
+    #nav{display:block}
+
+    #logo{display: flex;
+    align-items:center ;
+    margin: 0;
+    padding: 1em;}
+
+    .menu{display: inline-grid;
+    margin:1em}
+
+    nav{text-align: center;}
+
+    #herounit{padding-bottom: 25vw;}
+
+    h1{font-size: 2.8em;}
+
+    #textounit{max-width: 100%;
+    padding-top: 20%;}
+
+    #parrafounit{max-width: 80%;
+    color: #FAE9DC;
+    font-size: 1.3em;}
+
+    #razones {display:block}
+
+    .beneficios{width: 100%;
+    padding-bottom: 1.4em;}
+
+    #tit-platos {
+        font-size: 1.5em;
+        padding: 1.3em;}
+
+    #tit-bene{font-size: 1.5em;
+    padding: 1.3em;}
+
+    #propuesta1{display: block;}
+
+    .art1{width: 80%;
+    text-align: center;
+    padding-bottom: 2em;}
+
+    .par-comida{text-align: center}
+
+    .sub-comida{font-size: 1.8em;
+    text-align: center;
+    padding-bottom:0.4em;}
+
+    .imagen {
+        background: #000 url(./recursos/pizzaCelular.jpg) no-repeat center top;
+        width: 100%;
+        height: 300px;
+    }
+
+    #propuesta-2{display: block;}
+
+    #art-dos{width: 70%;
+    padding: 2em 0;}
+
+    .enlace-comida{text-align: center;
+        justify-content: center;
+        font-size: 1em;
+        display: grid;}
+
+    #imagen-dos{height: 0;}
+
+    #imagen-dos-celular {background: #000 url(./recursos/tortillaCelular.jpg) no-repeat center top;
+        width: 100%;
+        height: 300px;
+    }
+
+    #propuesta-tres{display: block;}
+
+    #art-tres{width: 100%;
+        padding: 2em;}
+
+    #imagen-tres {background: #000 url(./recursos/mousseCelular.jpg) no-repeat center top;
+        width: 100%;
+        height: 300px;
+    }   
+
+>>>>>>> a19aa746f34c85c5b18c0b1c18c03317453e1889
 }
 
