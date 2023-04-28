@@ -594,3 +594,33 @@ color:#000;
     font-weight: 700;
 }
 
+/*******BOTON DESCARGAR MENU*******/
+#adjunto{
+    margin-left: -10px ;
+    margin-bottom: 60px;
+    padding: 0.8em;
+    
+    
+}
+#adjunto:hover{
+
+    transform: scale(1.15);
+
+}
+.letra{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color:#00909B;
+    text-transform: uppercase;
+    justify-content: center;
+    /* background-color: #006769; */
+    padding: 3px;
+    border-radius: 15px;
+    
+}
+.letra:hover{
+    
+    color:#fce7de;
+}
+
