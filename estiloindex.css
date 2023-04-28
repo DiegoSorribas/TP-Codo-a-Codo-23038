@@ -597,36 +597,6 @@ color:#000;
     font-weight: 700;
 }
 
-<<<<<<< HEAD
-/*******BOTON DESCARGAR MENU*******/
-#adjunto{
-    margin-left: -10px ;
-    margin-bottom: 60px;
-    padding: 0.8em;
-    
-    
-}
-#adjunto:hover{
-
-    transform: scale(1.15);
-
-}
-.letra{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    color:#00909B;
-    text-transform: uppercase;
-    justify-content: center;
-    /* background-color: #006769; */
-    padding: 3px;
-    border-radius: 15px;
-    
-}
-.letra:hover{
-    
-    color:#fce7de;
-=======
 @media screen and (max-width:876px) {
 
     #navegadorbox{display:block;}
@@ -759,6 +729,36 @@ color:#000;
         height: 300px;
     }   
 
->>>>>>> a19aa746f34c85c5b18c0b1c18c03317453e1889
-}
 
+}
+/*******BOTON DESCARGAR MENU*******/
+#adjunto{
+    margin-left: -10px ;
+    margin-top: 5px;
+    padding: 0.8em;
+    
+    
+    
+}
+#adjunto:hover{
+
+    transform: scale(1.15);
+
+}
+.letra{
+    
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color:#00909B;
+    text-transform: uppercase;
+    justify-content: center;
+    /* background-color: #006769; */
+    padding: 3px;
+    border-radius: 15px;
+    
+}
+.letra:hover{
+    
+    color:#fce7de;
+}
