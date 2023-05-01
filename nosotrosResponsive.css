@@ -1,0 +1,122 @@
+/*responsive Nosotros */ 
+@media screen and (min-width:400px) and (max-width:600px){
+    header{
+        
+        max-width: 100%;
+        /* position:relative; */
+        display: block;
+    }
+    
+     /* #menu-reserva, .nav{
+        color: red;
+    } */
+    .header{
+        max-width: 100%;
+        position:relative;
+    }
+
+    #navegadorbox{
+        display: block;
+    }
+
+    #nav{display:block}
+
+    #logo{display: flex;
+    align-items:center ;
+    margin: 0;
+    padding: 1em;}
+
+    .menu{display: inline-grid;
+    margin:1em}
+
+    nav{text-align: center;}
+   .list{
+        display: block;
+    }
+    #detalle {
+        display: block;
+       }
+    .carousel-item{
+        height: 25em;
+    } 
+    .carousel-caption{
+        height:50%;
+    }
+   
+    #detalle{display: block;}
+    
+    .colorr{display:block;}
+    #img-1-nosotros{
+        display: block;
+        width: 100%;
+    }
+    #color{display: block;}
+    #img-2-nosotros{display: block;
+    width: 100%;
+    }
+   
+    #img-3-nosotros{
+        display: block;
+        width: 100%;
+    } 
+     
+}
+@media screen and (min-width:600px) and (max-width:900px){
+    header{
+        
+        max-width: 100%;
+        /* position:relative; */
+        display: block;
+    }
+    
+     #menu-reserva, .nav{
+        color: rgb(40, 151, 32);
+    }
+    .header{
+        max-width: 100%;
+        position:relative;
+    }
+
+    #navegadorbox{
+        display: block;
+    }
+
+    #nav{display:block}
+
+    #logo{display: flex;
+    align-items:center ;
+    margin: 0;
+    padding: 1em;}
+
+    .menu{display: inline-grid;
+    margin:1em}
+
+    nav{text-align: center;}
+   .list{
+        display: block;
+   }
+}
+
+@media screen and (min-width:900px){
+    header{
+        
+        max-width: 100%;
+        display: flex;
+    }
+    
+    #navegadorbox{
+        display: flex;
+    }
+
+    #nav{display:flex}
+    .list{
+        display: flex;
+   }
+   #logo{display: flex;
+    align-items:left ;
+    margin: 0;
+    padding: 1em;}
+
+}
+
+
