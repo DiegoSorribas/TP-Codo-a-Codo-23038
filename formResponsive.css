@@ -1,0 +1,80 @@
+
+/*********************** QUERIES CONTACTO GRISEDA *******************************/
+/********************************************************************************/
+
+@media screen and (min-width:1200px){
+    .header{
+        font-size: 11px;
+        display: grid;
+        height: 25vh;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+    }
+    .header{
+        grid-column-start: 1;
+    }
+}
+@media screen and (max-width:992px){
+
+
+
+
+
+}
+/* 
+    header
+    .header
+        section #navegadorbox
+        figure #logo
+        nav
+            ul
+                li .menu .nav #menu-reserva
+
+
+
+
+main .main-contacto
+    h1 .h1-contacto
+    form
+        fieldset .fieldset-reserva
+            section #titular
+                h3
+                label 
+                input
+                label
+                input
+                label
+                input
+            
+            section #momento
+                h3 .sub-form
+                    .circulo
+                        label
+                        input
+                        label
+                        input
+                    .circulo
+                        label
+                        input
+                        label
+                        input
+
+            section #botones
+                button
+                button */
+    /**FIN FORMULARIO*/
+
+/* section  #encontrarnos
+    article #mapa
+        iframe
+
+    article #contacto
+        ul .list-con
+            li
+            li
+        ul .list-con
+            li
+            li
+        ul .list-con
+            li
+            li */
