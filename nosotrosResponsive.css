@@ -58,20 +58,17 @@
     #img-3-nosotros{
         display: block;
         width: 100%;
-    } 
-     
-}
+    } }
 @media screen and (min-width:600px) and (max-width:900px){
     header{
         
         max-width: 100%;
         /* position:relative; */
-        display: block;
-    }
+        display: block;}
     
-     #menu-reserva, .nav{
+    /* #menu-reserva, .nav{
         color: rgb(40, 151, 32);
-    }
+    } */
     .header{
         max-width: 100%;
         position:relative;
@@ -94,7 +91,61 @@
     nav{text-align: center;}
    .list{
         display: block;
+        justify-content: center;
    }
+   #detalle {
+        display: block;
+       }
+    .carousel-item{
+        height: 25em;
+    } 
+    .carousel-caption{
+        height:50%;
+    }
+   
+    #detalle{display: block;}
+    
+    .colorr{display:block;}
+    #img-1-nosotros{
+        display: block;
+        width: 100%;
+    }
+    #color{display: block;}
+    #img-2-nosotros{display: block;
+    width: 100%;
+    }
+   
+    #img-3-nosotros{
+        display: block;
+        width: 100%;
+    } 
+    /*****agrego desde********/
+    /* #detalle {
+        display: block;
+       }
+    .carousel-item{
+        height: 25em;
+    } 
+    .carousel-caption{
+        height:50%;
+    }
+   
+    #detalle{display: block;}
+    
+    .colorr{display:block;}
+    #img-1-nosotros{
+        display: block;
+        width: 100%;
+    }
+    #color{display: block;}
+    #img-2-nosotros{display: block;
+    width: 100%;
+    }
+   
+    #img-3-nosotros{
+        display: block;
+        width: 100%;
+    }  */
 }
 
 @media screen and (min-width:900px){
