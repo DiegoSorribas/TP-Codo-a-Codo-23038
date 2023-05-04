@@ -20,7 +20,7 @@
             </figure>
 
             <nav>
-                <ul>
+                <ul id="nav">
                     <li class="menu"> <a class="nav" href="index.html" >Inicio</a></li>
                     <li class="menu"> <a class="nav" href="Bodegones.html" >Bodegones</a></li>
                     <li class="menu"> <a  class="nav" href="nosotros.html" >Nosotros</a></li>
@@ -74,20 +74,28 @@
                 <section id="bodegon">
                     <h3 class="sub-form">Bodegón elegido</h3>
                     
-                    <div class="circulo">
+                    
+
+                    <article class="circulo"> 
                         <input type="radio" name="casa" id="casa" class="radio">
                         <label for="casa" class="circle">Como en casa</label>
-                    
+                    </article>
+
+                    <article class="circulo">
                         <input type="radio" name="grill" id="grill" class="radio">
                         <label for="grill" class="circle">Grill House </label>
-                    </div>
-                    <div class="circulo">
+                    </article>
+
+                    <article class="circulo">
                         <input type="radio" name="profundo" id="profundo" class="radio">
                         <label for="profundo" class="circle">Plato Profundo </label>
+                    </article>
 
+                    <article class="circulo">
                         <input type="radio" name="manolo" id="manolo" class="radio">
                         <label for="manolo" class="circle">Manolo </label>
-                    </div>
+                    </article>
+
                 </section>
 
                 
@@ -96,7 +104,6 @@
             <section id="botones">
 
                 <button class="btn-enviar" type="submit">Enviar Reserva</button>
-                <button class="btn-limpiar" type="reset">Limpiar</button>
         
             </section>
             
