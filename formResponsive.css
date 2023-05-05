@@ -9,17 +9,14 @@
 
 
     body{
-        display: grid;
-        width: 100%;
-    }
-    .header > #navegadorbox{
+     
         /* font-size: 11px; */
         display: grid;
         height: 11em;
         width: 100%;
         grid-template-columns: 1/3 ;
         /* grid-template-rows: 11em; */
-        grid-template-areas:'#logo nav';
+        grid-template-areas:'figure nav';
         gap: 1px;
         /* background-color: #2196F3; */
         
