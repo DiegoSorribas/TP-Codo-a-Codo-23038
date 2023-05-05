@@ -7,34 +7,54 @@
 /*********************** QUERIES CONTACTO GRISEDA *******************************/
 /********************************************************************************/
 
-@media screen and (min-width:1200px){
+
     body{
         display: grid;
         width: 100%;
     }
-    .header{
-        font-size: 11px;
+    .header > #navegadorbox{
+        /* font-size: 11px; */
         display: grid;
-        height: 25vh;
+        height: 11em;
         width: 100%;
-        grid-template-columns: 9.37 9.37 9.37 9.37 9.37 9.37 9.37 9.38;
-        grid-template-rows: 11em;
-        grid-column-start: 1;
-        grid-column-end: 8;
-        grid-template-areas:'img ul';
+        grid-template-columns: 1/3 ;
+        /* grid-template-rows: 11em; */
+        grid-template-areas:'#logo nav';
         gap: 1px;
         /* background-color: #2196F3; */
         
     }
+    /* figure{
+        /* display: grid; 
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+    nav{
+        /* display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+
+    } */
     .main-contacto{
-        font-size: 15px;
-        height:65vh;
-        margin: 1px;
+        /* font-size: 15px; */
+        height:auto;
+        /* margin: 3em; */
         display: grid;
         padding: 0%;
-        /*grid-template-columns:9.37 9.37 9.37 9.37 9.37 9.37 9.37 9.38; 8 verticales de 9.37 em = 150px*/
-        /* grid-template-rows: 11 11 11 11 11 11 11 11 11 11 11;}11 horizontales de 11em= 176 px */
-    }
+        grid-template-columns:repeat(27.08, 3); /*3 verticales de 27.08 em = 433px*/
+        grid-template-rows: 2/3;}
+
+    footer{
+        height:17.06em;
+        grid-template-columns: repeat(27.08, 3) ;
+        grid-template-rows: 17.06em;
+        grid-column: span 3;}
+
+    
+
+    /* 
     #logo{
         grid-area:50%;
         grid-column-start: 1;
@@ -50,7 +70,7 @@
         font-size: smaller;
     }
 
-
+}
 
 @media screen and (min-width:900px)and (max-width:1124px){
     body{
@@ -67,12 +87,12 @@ grid-auto-rows: minmax(11em, auto);
 grid-column-start: 1;
 grid-column-end:7;
 grid-template-areas:'img ul';
-/* gap: 1px;*/
+gap: 1px;
 } 
 #logo{
 grid-area:30%;
 /* grid-column-start: 2;
-grid-column-end: 3; */}
+grid-column-end: 3; }
 nav{
 display: inline-grid;
 grid-area: 70%;
@@ -92,7 +112,7 @@ display: grid;
 padding: 0%;
 grid-area: "form #encontrarnos";
             /* grid-template-columns:10.71 10.71 10.71 10.71 10.71 10.71 10.71;
-            grid-template-rows: 11 11 11 11 11 11 11 11 11 11 11; */
+            grid-template-rows: 11 11 11 11 11 11 11 11 11 11 11; 
         }
 .field-reserva{
 min-width: 100%;
@@ -116,7 +136,7 @@ display: block;
         grid-column-end:7;
         grid-template-areas:'img ul';
 }
-    }
+    }*/
 
 
 
