@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: grid;
+    height:100vh;
+    max-width: 100%;
+    grid-template-columns: 40.625em 40.625em;
+    grid-template-rows: 10.68em auto 175em 175em 175em 175em 20.04em ;
+}

@@ -408,7 +408,7 @@ padding-bottom: 2em;}
     text-transform: uppercase;
     font-weight: 700;
     font-family: poppins;
-    padding: 1em;
+    padding: 1em 5em;
     margin:1em;
     font-size: 1em;
     background-color:  #006769;
@@ -488,13 +488,13 @@ label {padding: 0.4em 0em;}
 }
 
 .circulo{
-    padding:1em;
+    padding:1em 0;
 }
 
 #encontranos {
     display: flex;
     padding-top: 4em;
-    width: 50%;
+    width: 60%;
 }
 
 .list-con {
@@ -636,6 +636,22 @@ color:#000;
     #imagen-tres {
         background: #000 url(./recursos/mousseTablet.jpg) no-repeat center top;
         }
+
+    iframe{width:22em;
+    height: 22em;}
+
+    #encontranos {width: 100%;
+    display: block;
+    text-align: center;}
+
+    form{width: 70%;}
+
+    #contacto{margin: 0;}
+
+    .list-con{font-size: 1.7em;}
+
+    .circle{padding: 0;}
+
 }
 
 @media screen and (max-width:584px){
@@ -726,39 +742,33 @@ color:#000;
 
     #imagen-tres {background: #000 url(./recursos/mousseCelular.jpg) no-repeat center top;
         width: 100%;
-        height: 300px;
-    }   
+        height: 300px;}
+
+    iframe{width:17em;
+        height: 17em;}
+
+    .list-con{font-size: 1.7em;
+    text-align: center;}
+
+    #encontranos {display: block;
+    text-align: center;}
+
+    form{width: 100%;}
+
+    .circle{margin:1em;}
+
+    .btn-enviar{padding: 0.8em 2em}
+
+}
+@media screen and (max-width:1130px) and (min-width: 876px) {
+
+    iframe{width:25em;
+        height: 25em;}
+    
+    #encontranos {width: 100%;}
+
+    form{width: 50%;}
 
 
 }
-/*******BOTON DESCARGAR MENU*******/
-#adjunto{
-    margin-left: -10px ;
-    margin-bottom: 15px;
-    padding: 1em;
-    
-    
-    
-}
-#adjunto:hover{
 
-    transform: scale(1.15);
-
-}
-.letra{
-    
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    color:#00909B;
-    text-transform: uppercase;
-    justify-content: center;
-    /* background-color: #006769; */
-    padding: 3px;
-    border-radius: 15px;
-    
-}
-.letra:hover{
-    
-    color:#fce7de;
-}
