@@ -1,13 +1,44 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
+} */
+
+/*******BOTON DESCARGAR MENU en BODEGONES*******/
+#adjunto{
+    margin-left: -10px ;
+    margin-bottom: 60px;
+    padding: 0.8em;
+    
+    
 }
-body{
+#adjunto:hover{
+
+    transform: scale(1.15);
+
+}
+.letra{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color:#00909B;
+    text-transform: uppercase;
+    justify-content: center;
+    /* background-color: #006769; */
+    padding: 3px;
+    border-radius: 15px;
+    
+}
+.letra:hover{
+    
+    color:#fce7de;
+}
+
+/* body{
     display: grid;
     height:100vh;
     max-width: 100%;
     grid-template-columns: 40.625em 40.625em;
     grid-template-rows: 10.68em auto 175em 175em 175em 175em 20.04em ;
-}
+} */
