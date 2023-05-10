@@ -1,105 +1,125 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-    
+}
+body{
+    /*display: grid;
+     max-width: 1300px;
+    grid-template-columns:27.45em 26.33em 27.45em;
+    grid-template-rows: 10.68em 6.95em 80.06em 34.43em 17.04em ; */
+    grid-template-areas: "header"
+                         "h1"
+                         "form"
+                         "#encontrarnos"
+                         "footer";
+}
+body .header{
+grid-column: span 3;
+grid-row: 10.68em;
 }
 
-/*********************** responsive CONTACTO GRISEDA *******************************/
-/********************************************************************************/
-
-
-    body{
-     
-        /* font-size: 11px; */
-        display: grid;
-        height: 160em; 
-        max-width: 100%;
-        height: 100vh;
-        grid-template-columns: 27.45em, 26.35em, 27.45em;/*tomo como ref ancho de formulario*/
-        /* grid-template-rows: 10.69em, 132.175em, 17.06em;
-         */
-        grid-template-rows:repeat(3, 1fr);
-        grid-template-areas:"header" 
-                             "main" 
-                             "footer";
-        /* gap: 1px; */
-        background-color: #9c705d; /*color del fondo de division de columnas laterales*/
-        
-        
-    
-    }
-    body .header{
-        position: sticky;
-        top: 0;
-        grid-column:span 3;
-        grid-row: 10.69em;
-    }
-    nav{
-        display: flex;}
-    nav ul{margin-top: 4.625em; 
-
-    }   
-        
-  
-   main.main-contacto{
-        max-width: 100%;
-        display: block;
-        /* padding:3em; */
-        /* grid-template-columns: 24.45em, 26.33em, 24.45em; */
-        
-        grid-template-rows: 6.95em, 83em, 34.44em;
-        grid-template-areas: "h1" 
-                             "form" 
-                             "#encontrarnos";
+body .h1{
+    grid-column: 2/3;
+    grid-row: 6.95em;
 }
 
-    .main-contacto{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        /* grid-template-columns: 21.09em 19.47em 21.09em;
-        grid-template-rows: 80.06em; */
-        
-    }
-    /* .main-contacto h1{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        
-    } */
-    .main-contacto h1{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        margin-right: 2em;
-    }
-    .main-contacto form{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        width:26.35em ;
-        margin: auto 17.65em ;
-       }
+body form{
+    grid-column: 2/3;
+    grid-row: 80.06em;
+}
 
-    footer{
-        
-        grid-row: 20.04em;
-        grid-column: span 3;}
+body #encontrarnos{
+    grid-column-start:1 ;
+    grid-row:34.43em ;
+    grid-column-end: 3;
+
+}
+
+body footer{
+    grid-column: span 3;
+    grid-row: 17.04em;
+}
+@media screen and (max-width: 710px)and (min-width: 425px){
+    .btn-enviar{
+        font-weight: 400;
+        padding:0.75em 3.9em ;
+        margin:0.75em;
+        font-size: 0.75em;
+        border-radius: 19px;
+    }
+    .btn-limpiar{
+        font-weight: 200;
+        padding: 0.75em;
+        margin: 0.75em;
+        padding-left: 2.10em;
+        padding-right: 2.10em;
+        font-size: 0.75em;
+        border-radius: 19px;
+    }
+}
+@media screen and (max-width: 425px){
     
-@media screen and (min-width:768px) and (max-width: 876px){
-    body .header{
-        grid-column: 1/-1;}}
-@media screen and (min-width: 300px)and(max-width:768px){
-    body{
-     
-        /* font-size: 11px; */
-        display: flex; 
-        max-width: 100%;
-        height: 100vh;
+    .btn-enviar{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-family: poppins;
+        padding: 0.5em 2.5em;
+        margin:0.5em;
+        font-size: 0.5em;
+        background-color:  #006769;
+        /*text-align: center;*/
+        border-radius: 12.5px;
+    }
     
-}main.main-contacto{
-    max-width: 100vw;
-    display: block;}
-.menu{
-    font-size: 55px;
-}}
+    
+    
+    .btn-limpiar{
+        color: #006769;
+        font-weight: 200;
+        font-family: poppins;
+        text-transform: uppercase;
+        padding: 0.5em;
+        margin: 0.5em;
+        padding-left:1.5em;
+        padding-right:1.5em;
+        font-size: 0.5em;
+        background-color:  #fff;
+        /*text-align: center;*/
+        border-radius: 12.5px;
+    }}
+@media screen and (min-width: 192px) and (max-width:425px){
+   body{
+    grid-auto-columns:max-content;
+   }
+        form{
+            width: 110%;
+        }
+        #mapa{
+            
+            max-height: 50%;
+            
+        }
+        .list-con {
+            list-style: none;
+            padding: 0.5em;
+            font-variant: small-caps;
+            font-weight: 300;
+            font-size: 0.85em;
+            color:white;
+        }
+    #encontrarnos #contacto ul li .nombre-list{
+        font-size: 0.35em;
+    }
+    #encontrarnos #contacto ul li .hijo-list{
+        font-size: 0.35em;
+    }
+    }    
+    
+
+
+
 
 
 
