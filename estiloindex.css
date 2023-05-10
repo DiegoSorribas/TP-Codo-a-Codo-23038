@@ -8,9 +8,19 @@
 }
 
 
+.flecha_arriba{
+    width: 5px;
+    height: 5px;
+    position: fixed;
+    bottom: 10%;
+    right: 7em;
+    cursor: pointer;
+}
+
 /*------- ------*/
 /*estilos header*/
 /*------- ------*/
+
 .header{
     background-color:#fae9dca8;
     position: sticky;
@@ -42,7 +52,7 @@
     text-transform: uppercase;
     font-weight: 700;
     color:#A34032;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 #menu-reserva {
@@ -611,6 +621,8 @@ color:#000;
     display: flex;
     justify-content: center;}
 
+    .nav{font-size: 1.2em;}
+
     .header {
     position: relative;}
 
@@ -656,6 +668,10 @@ color:#000;
 
 @media screen and (max-width:584px){
 
+    .flecha_arriba{
+        display: none;
+    }
+
     .header{
         max-width: 100%;
         position:relative;
@@ -666,6 +682,8 @@ color:#000;
     }
 
     #nav{display:block}
+
+    .nav{font-size: 1.2em;}
 
     #logo{display: flex;
     align-items:center ;
@@ -753,7 +771,8 @@ color:#000;
     #encontranos {display: block;
     text-align: center;}
 
-    form{width: 100%;}
+    form{width: 100%;
+    font-size: 0.93em;}
 
     .circle{margin:1em;}
 
