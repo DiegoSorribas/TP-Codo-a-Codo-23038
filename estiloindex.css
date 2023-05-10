@@ -14,7 +14,8 @@
 .header{
     background-color:#fae9dca8;
     position: sticky;
-    top: 0;
+    top: 0
+    ;
 }
 
 #navegadorbox{
@@ -77,14 +78,16 @@
 #logo {
     margin-top: 2em;
     margin-bottom: 2em;
-    margin-left:14em;
-    margin-right: 10.5em;
+    margin-left:12em;
+    margin-right: 5em;
 }
 
 
 .list{
     display:flex;
 }
+
+
 
 
 /*------- ---- -----*/
@@ -258,6 +261,9 @@ background-color: #002b2c;}
     height:700px;
     margin: 0;
 }
+#imagen-dos-celular{width: 0;
+margin: 0;}
+
 
 #art-dos {width:20%}
 
@@ -308,8 +314,36 @@ padding-bottom: 2em;}
     background-color: #006769;
     transition: 0.2s ease;
 }
+/*AGREGO BOTON PARA "VOLVER"*/
+#volver{
+    height: 6em;
+    background-color:#fae9dca8;
+    display: flex;
+}
+.boton-bodegon1 {
+    color:#fce7de;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.6em;
+    background-color:#00909B ;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-flex;
+    margin-top: 25px;
+    justify-content: center;
+    
+    /* margin-top:2em; */
+    
+}
+.boton-bodegon1:hover{
+    transform: scale(0.75);
+}
 
-.texto-bod {padding-bottom: 3.5em;}
+/*--------------------------*/
+
+
+.texto-bod{padding-bottom: 3.5em;}
+
 
 /*#contenedor{
     display: flex;
@@ -321,7 +355,6 @@ padding-bottom: 2em;}
 
 .main-contacto{
     background-color: #9c705d;
-    padding: 3em;
 }
 
 #celeste {background-color:#002b2c}
@@ -375,7 +408,7 @@ padding-bottom: 2em;}
     text-transform: uppercase;
     font-weight: 700;
     font-family: poppins;
-    padding: 1em;
+    padding: 1em 5em;
     margin:1em;
     font-size: 1em;
     background-color:  #006769;
@@ -409,104 +442,16 @@ padding-bottom: 2em;}
     background-color: #006769;
     transition: 0.4s ease;
 }
-/*
+
 .main-contacto {padding: 3em;}
-*/
+
 form {
-    width: 75%;
+    width: 35%;
     background-color: #bb8d79;
     border-color:transparent;
     padding: 3em;
     border-radius: 2%;
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 35%);
-}
-
-/*Querys de contacto*/
-/*------ -- --------*/
-
-@media screen and (max-width: 320px) {
-    .main-contacto{
-        display: flex;
-        flex-direction: column;
-        /*flex-wrap:nowrap;*/
-        /*justify-content:space-evenly;*/
-        padding: 1rem;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    .form {
-        width: 35%;
-        background-color: #bb8d79;
-        border-color:transparent;
-        padding: 3em;
-        border-radius: 2%;
-        box-shadow: 0 1px 10px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 35%);
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    .fieldset {
-        display: flex;
-        align-items: stretch;
-        width: 100%;
-        background-color: #bb8d79;
-        border-color:transparent;
-        padding: 1em;
-        border-radius: 2%;
-        box-shadow: 0 1px 10px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 35%);
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    #titular {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    #bodegon {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .circulo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    #botones {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    #encontranos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    #mapa {
-        display:none;
-    }
 }
 
 .block {
@@ -543,13 +488,13 @@ label {padding: 0.4em 0em;}
 }
 
 .circulo{
-    padding:1em;
+    padding:1em 0;
 }
 
 #encontranos {
     display: flex;
     padding-top: 4em;
-    width: 50%;
+    width: 60%;
 }
 
 .list-con {
@@ -587,7 +532,8 @@ footer {
     background-color: #006769;
     color: white;
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 2em;/*2*/
+    
 }
 
 
@@ -606,8 +552,10 @@ footer {
     background-color:#A34032;
 }
 
+
+
 #img-1-nosotros {
-    background: #000 url(./recursos/nosotros1.jpg) no-repeat center top;
+    background: #000 url(./recursos/nosotros1.jpg) ;
     width: 50%;
     height:700px;
     margin: 0;
@@ -637,7 +585,8 @@ footer {
 }
 
 .carousel-item{height: 47em;
-color:#000;}
+color:#000;
+}
 
 .titulo-carrusel {text-transform: uppercase;
     color:#ffffff;
@@ -646,5 +595,180 @@ color:#000;}
     margin-bottom:0.8em;
     font-family: 'Poppins', sans-serif; 
     font-weight: 700;
+}
+
+@media screen and (max-width:876px) {
+
+    #navegadorbox{display:block;}
+
+    #logo {
+    padding-top: 1.3em;
+    display:flex;
+    margin:0;
+    }
+
+    #nav {
+    display: flex;
+    justify-content: center;}
+
+    .header {
+    position: relative;}
+
+    #razones {
+        max-width:100%
+    }
+
+    .art1{width:30%;}
+
+    #art-dos{width:30%;
+    }
+
+    #art-tres {width:30%;}
+
+    .imagen {
+        background: #000 url(./recursos/pizzaTablet.jpg) no-repeat center top;
+    }
+
+    #imagen-dos {
+        background: #000 url(./recursos/tortillaTablet.jpg) no-repeat center top;
+    }
+
+    #imagen-tres {
+        background: #000 url(./recursos/mousseTablet.jpg) no-repeat center top;
+        }
+
+    iframe{width:22em;
+    height: 22em;}
+
+    #encontranos {width: 100%;
+    display: block;
+    text-align: center;}
+
+    form{width: 70%;}
+
+    #contacto{margin: 0;}
+
+    .list-con{font-size: 1.7em;}
+
+    .circle{padding: 0;}
+
+}
+
+@media screen and (max-width:584px){
+
+    .header{
+        max-width: 100%;
+        position:relative;
+    }
+
+    #navegadorbox{
+        display: block;
+    }
+
+    #nav{display:block}
+
+    #logo{display: flex;
+    align-items:center ;
+    margin: 0;
+    padding: 1em;}
+
+    .menu{display: inline-grid;
+    margin:1em}
+
+    nav{text-align: center;}
+
+    #herounit{padding-bottom: 25vw;}
+
+    h1{font-size: 2.8em;}
+
+    #textounit{max-width: 100%;
+    padding-top: 20%;}
+
+    #parrafounit{max-width: 80%;
+    color: #FAE9DC;
+    font-size: 1.3em;}
+
+    #razones {display:block}
+
+    .beneficios{width: 100%;
+    padding-bottom: 1.4em;}
+
+    #tit-platos {
+        font-size: 1.5em;
+        padding: 1.3em;}
+
+    #tit-bene{font-size: 1.5em;
+    padding: 1.3em;}
+
+    #propuesta1{display: block;}
+
+    .art1{width: 80%;
+    text-align: center;
+    padding-bottom: 2em;}
+
+    .par-comida{text-align: center}
+
+    .sub-comida{font-size: 1.8em;
+    text-align: center;
+    padding-bottom:0.4em;}
+
+    .imagen {
+        background: #000 url(./recursos/pizzaCelular.jpg) no-repeat center top;
+        width: 100%;
+        height: 300px;
+    }
+
+    #propuesta-2{display: block;}
+
+    #art-dos{width: 70%;
+    padding: 2em 0;}
+
+    .enlace-comida{text-align: center;
+        justify-content: center;
+        font-size: 1em;
+        display: grid;}
+
+    #imagen-dos{height: 0;}
+
+    #imagen-dos-celular {background: #000 url(./recursos/tortillaCelular.jpg) no-repeat center top;
+        width: 100%;
+        height: 300px;
+    }
+
+    #propuesta-tres{display: block;}
+
+    #art-tres{width: 100%;
+        padding: 2em;}
+
+    #imagen-tres {background: #000 url(./recursos/mousseCelular.jpg) no-repeat center top;
+        width: 100%;
+        height: 300px;}
+
+    iframe{width:17em;
+        height: 17em;}
+
+    .list-con{font-size: 1.7em;
+    text-align: center;}
+
+    #encontranos {display: block;
+    text-align: center;}
+
+    form{width: 100%;}
+
+    .circle{margin:1em;}
+
+    .btn-enviar{padding: 0.8em 2em}
+
+}
+@media screen and (max-width:1130px) and (min-width: 876px) {
+
+    iframe{width:25em;
+        height: 25em;}
+    
+    #encontranos {width: 100%;}
+
+    form{width: 50%;}
+
+
 }
 
