@@ -1,73 +1,112 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+header #navegadorbox{
+    place-content: flex-start;
 }
+header #navegadorbox nav{
 
-body{
-    display: block;
-    min-width: 1300px;
-    grid-template-columns:repeat(50%); /*40.625em 40.625em;*/
-    grid-template-rows: 10.69em 14.13em 87.90em 87.90em 87.90em 87.90em 17.25em ;
+    width: 70%;
+    display:flex;
+    place-content: space-between;
 }
-
-
-body header{
-    grid-column: span 2;
-    grid-row: 1/2;
-}
-body h1 p{
-    display: block;
-    grid-column: span 2;
-    grid-row: 2/3;
-}
-body .art1{
-    grid-column: 1;
-    grid-row: 3/4;
-    display: block;
-}
-body #img-1{
-    display: block;
-    grid-column: 2;
-    grid-row: 3/4;
-    justify-content: flex-start;
-    margin-left: 24.375em;
-}
-body .art2{
-    grid-column: 2;
-    grid-row: 4/5;
-    display: block;
-}
-body #img-2{
-    display: flex;
-    grid-column: 1;
-    grid-row: 4/5;
+#menuu, #menuu-check{
+    display: none;
     
 }
-body #art-tres{
-    grid-column: 1;
-    grid-row: 5/6;
-    display: block;
-}
-body #img-3{
-    display: flex;
-    grid-column: 2;
-    grid-row: 5/6;
-    justify-content: flex-start;
-    margin-left: 24.375em;
+
+@media only screen and (max-width: 900px){
+    header #navegadorbox, header #navegadorbox ul, header #navegadorbox ul li{
+        display: inline;
     }
 
-body footer{
-    grid-column: span 2;
-    grid-row: 7/8;
+    header #navegadorbox nav{
+        width: 100%;
+        display: inline;
+    }}
 
-}
-@media screen and (min-width: 1300px){
-    article .propuesta{
+@media only screen and (max-width: 700px){
+    header h1{/* NO AFECTA */
+        margin:0;
+    }
+    header h1 a{/* NO AFECTA */
+        padding:0;
+    }
+    header #navegadorbox{
         display: flex;
+        place-content: space-between;
+    } 
+
+    /*BOTONES EN LA BARRA NAVEGACION*/
+
+    #menuu-check:not(:checked) ~ nav{
+        display: none;
+
     }
-    body h1 p{
-        align-self: center;
+    #menuu-check:checked ~ nav{
+        display: block;
+
     }
+    #menuu-abrir{
+        color:#fce7de;
+    }
+    #menuu-cerrar{
+        color:#fce7de;
+        display: none;
+    }
+    #menuu{
+        display: block;
+        
+        background-color: #A34032;
+        font-size: 1em;
+        font-weight: bold;
+        border:3px solid #9c705d;
+        border-radius: 0.3em;
+        position: absolute;
+        right:0.5em;
+        top:2.5em;
+        width: 50px;
+        padding:3px;
+        text-align: center;
+        z-index: 1;
+        
+    }
+    #menuu:hover{
+        color:#A34032;
+        background-color:#006769 ;
+
+    }
+    #menuu-check:checked~label #menuu-abrir{
+display: none;
+    }
+    #menuu-check:checked~label #menuu-cerrar{
+        display: block;
+            }
+header #navegadorbox nav{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    background-color:rgb(0, 103, 105, 0.3);
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+
+}
+header #navegadorbox nav ul, header #navegadorbox nav ul a{
+    color:#fce7de;
+    background: none;
+    padding: auto;
+    margin: 10px 10px ;
     
 }
+header #navegadorbox nav ul, header #navegadorbox nav ul li {
+    display: block;
+    text-align: right;
+   
+    font-size: small;
+}
+header #navegadorbox nav ul a:hover{
+    color: cadetblue;
+}
+    
+    
+
+}
+
