@@ -12,16 +12,19 @@ header #navegadorbox nav{
     
 }
 
-@media only screen and (max-width: 900px){
+@media screen and (max-width: 900px){
     header #navegadorbox, header #navegadorbox ul, header #navegadorbox ul li{
         display: inline;
     }
 
     header #navegadorbox nav{
         width: 100%;
+        
         display: inline;
     }}
-
+@media screen and (min-width:877px) and (max-width:900) {
+    header{margin:0;
+}}
 @media only screen and (max-width: 700px){
     header h1{/* NO AFECTA */
         margin:0;
@@ -45,20 +48,20 @@ header #navegadorbox nav{
 
     }
     #menuu-abrir{
-        color:#fce7de;
+        color:#A34032;
     }
     #menuu-cerrar{
-        color:#fce7de;
+        color:#A34032;
         display: none;
     }
     #menuu{
         display: block;
         
-        background-color: #A34032;
-        font-size: 1em;
+        /* background-color: #A34032; */
+        font-size: 1.2em;
         font-weight: bold;
-        border:3px solid #9c705d;
-        border-radius: 0.3em;
+        /* border:3px solid #9c705d;
+        border-radius: 0.3em; */
         position: absolute;
         right:0.5em;
         top:2.5em;
@@ -70,7 +73,7 @@ header #navegadorbox nav{
     }
     #menuu:hover{
         color:#A34032;
-        background-color:#006769 ;
+        /* background-color:#006769 ; */
 
     }
     #menuu-check:checked~label #menuu-abrir{
@@ -79,21 +82,22 @@ display: none;
     #menuu-check:checked~label #menuu-cerrar{
         display: block;
             }
-header #navegadorbox nav{
+header #navegadorbox nav #opacidad{
     position: absolute;
-    top:0;
+    /* top:0; */
+    /* margin: 5px; */
     right:0;
     height: 100%;
-    background-color:rgb(0, 103, 105, 0.3);
+    /* background-color:rgb(0, 103, 105); */
     padding-top: 0.5em;
     padding-right: 1.5em;
 
 }
 header #navegadorbox nav ul, header #navegadorbox nav ul a{
-    color:#fce7de;
+    color:rgb(0, 103, 105);
     background: none;
     padding: auto;
-    margin: 10px 10px ;
+    margin: 10px 25px  ;
     
 }
 header #navegadorbox nav ul, header #navegadorbox nav ul li {
@@ -103,7 +107,7 @@ header #navegadorbox nav ul, header #navegadorbox nav ul li {
     font-size: small;
 }
 header #navegadorbox nav ul a:hover{
-    color: cadetblue;
+    color: #A34032;
 }
     
     
