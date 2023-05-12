@@ -20,9 +20,9 @@
             </figure>
 
             <nav>
-                <ul id="nav">
+                <ul>
                     <li class="menu"> <a class="nav" href="index.html" >Inicio</a></li>
-                    <li class="menu"> <a class="nav" href="bodegones-CON-DIVS.html" >Bodegones</a></li>
+                    <li class="menu"> <a class="nav" href="Bodegones.html" >Bodegones</a></li>
                     <li class="menu"> <a  class="nav" href="nosotros.html" >Nosotros</a></li>
                     <li class="menu" > <a class="nav" href="contacto.html" id="menu-reserva">Reservas</a></li>
                 </ul>
@@ -39,7 +39,7 @@
                     <h3 class="sub-form">Titular de la reserva</h3>
                     
                         <label for="name" class="block"> Su nombre</label>
-                        <input type="text" name="name" id="name" required placeholder="Ingrese su nombre" class="form">
+                        <input type="text" name="name" id="nombre" required placeholder="Ingrese su nombre" class="form">
                         <p id="escrito"></p>
 
                         <label for="apellido" class="block"> Su apellido</label>
@@ -56,9 +56,9 @@
                     <h3 class="sub-form">Fecha y hora de reserva</h3>
                     
                         <label for="date" class="block">Fecha de reserva</label>
-                        <input type="date" name="date" id="date" min="1990-01-01" max="2022-01-01" required class="form">
+                        <input type="date" name="date" id="date" min="2023-05-11" max="2023-07-31" required class="form">
 
-                        <label for="time" class="block">Horario de la reserva </label>
+                        <label for="time" class="block">Horario de la reserva (12 a 23 hs)</label>
                         <input type="time" name="time" id="time" min="12:00" max="23:00" required class="form">
                     
                 </section>
@@ -71,7 +71,7 @@
                         <p id="cantAdultos"></p>
 
                         <label for="menores" class="block">Menores:</label>
-                        <input type="number" name="menores" id="menores" min="0" required placeholder="Cantidad de menores" class="form">
+                        <input type="number" name="menores" id="menores" min="0" placeholder="Cantidad de menores" class="form">
                         <p id="cantMenores"></p>
                     
                 </section>
@@ -79,27 +79,21 @@
                 <section id="bodegon">
                     <h3 class="sub-form">Bodegón elegido</h3>
                     
-                    <article class="circulo"> 
+                    <div class="circulo">
                         <input type="radio" name="bodega" id="casa" class="radio" value="casa">
                         <label for="casa" class="circle">Como en casa</label>
-                    </article>
-
-                    <article class="circulo">
+                    
                         <input type="radio" name="bodega" id="grill" class="radio" value="grill">
-                        <label for="grill" class="bodega">Grill House </label>
-                    </article>
-
-                    <article class="circulo">
+                        <label for="grill" class="circle">Grill House </label>
+                    </div>
+                    <div class="circulo">
                         <input type="radio" name="bodega" id="profundo" class="radio" value="profundo">
                         <label for="profundo" class="circle">Plato Profundo </label>
-                    </article>
 
-                    <article class="circulo">
                         <input type="radio" name="bodega" id="manolo" class="radio" value="manolo">
                         <label for="manolo" class="circle">Manolo </label>
-                    </article>
-                    <p id="bodego"></p>
-
+                        <p id="bodego"></p>
+                    </div>
                 </section>
 
                 
@@ -108,6 +102,7 @@
             <section id="botones">
 
                 <button class="btn-enviar" type="submit" onclick="validaForm()">Enviar Reserva</button>
+                <button class="btn-limpiar" type="reset">Limpiar</button>
         
             </section>
             
@@ -155,7 +150,7 @@
         </article>
 
     </footer>
-
+     
     <script src="valida/valida.js"></script>
     
 </body>
