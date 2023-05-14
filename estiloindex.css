@@ -354,8 +354,8 @@ header #navegadorbox{
 }
 
 #par-bodegones {
-    max-width: 80%;
-    padding-bottom: 2em;
+    max-width: 70%;
+    padding-bottom: 2.5em;
 }
 
 .boton-bodegon {
@@ -641,7 +641,7 @@ footer {
     display:flex;
 }
 
-.carousel-item{height: 47em;
+.carousel-item{height: 82vh;
 color:#000;
 }
 
