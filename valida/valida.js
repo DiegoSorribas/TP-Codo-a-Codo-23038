@@ -96,6 +96,7 @@ desplazarArriba.addEventListener("click", () =>{
         behavior: "smooth",
 
     });
+<<<<<<< HEAD
 }); 
 
 const elementosBene = document.querySelectorAll('.imagen-bene');
@@ -114,3 +115,6 @@ function mostrarElementos() {
 
 window.addEventListener('scroll', mostrarElementos);
 mostrarElementos();
+=======
+}); 
+>>>>>>> 15b03a29ca03ea9ee88064246f93a8370fe6268a
