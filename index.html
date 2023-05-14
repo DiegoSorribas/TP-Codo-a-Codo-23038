@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header class="header">
@@ -19,10 +20,18 @@
                 <img src="./recursos/logo chiquito png.png">
             </figure>
 
-            <nav>
+            <input type="checkbox" id="menuu-check">
+            <label id="menuu" for="menuu-check">
+                <span id="menuu-abrir">&#9776;</span>                
+                <span id="menuu-cerrar">&#9776;</span>
+            </label>
+        <nav id="opacidad">
+
+
+
                 <ul id="nav">
                     <li class="menu"> <a class="nav" href="index.html">Inicio</a></li>
-                    <li class="menu"> <a class="nav" href="Bodegones-CON-DIVS.html" >Bodegones</a></li>
+                    <li class="menu"> <a class="nav" href="bodegones.html" >Bodegones</a></li>
                     <li class="menu"> <a class="nav" href="nosotros.html" >Nosotros</a></li>
                     <li class="menu" > <a class="nav" href="contacto.html" id="menu-reserva">Reservas</a></li>
                 </ul>
@@ -30,11 +39,15 @@
         </section>
     </header>
 
+    <i class="flecha_arriba" id="flecha_arriba">
+        <img src="./recursos/icono.png" alt="flecha apuntando hacia arriba" class="flecha">
+    </i>
+
     <main>
 
         <section id="herounit"><!--section introduccion-->
             <article id="textounit">
-                <h1>Los mejores bodegones de capital</h1>
+                <h1 class="zoom-in">Los mejores bodegones de capital</h1>
                 <p id="parrafounit">Conocé y disfrutá de las eminentes propuestas que la Ciudad de Buenos Aires te ofrece. </p>
                 <a href="contacto.html" id="boton-unit" class="nav">Reservá ahora</a>
             </article>
@@ -46,14 +59,14 @@
 
             <article id="razones">
                 <article class="beneficios">
-                    <figure class="imagen-bene">
-                        <img src="./recursos/chef.png" title="chef">
+                    <figure class="imagen-bene invisible">
+                        <img  src="./recursos/chef.png" title="chef" >
                     </figure>
                     <h3 id="sub-1">Magnífico servicio</h3>
                 </article>
 
                 <article class="beneficios">
-                    <figure class="imagen-bene">
+                    <figure class="imagen-bene invisible">
                         <img src="./recursos/comida.png" title="comida">
                         
                     </figure>
@@ -62,7 +75,7 @@
 
                 
                 <article class="beneficios">
-                    <figure class="imagen-bene">
+                    <figure class="imagen-bene invisible">
                         <img src="./recursos/atmosfera.png" title="atmósfera">
                     </figure>
                     <h3 id="sub-3">Buena atmósfera</h3>
@@ -77,7 +90,7 @@
                 <article class="art1">
                     <h3 class="sub-comida">Milanesa napolitana</h3>
                     <p class="par-comida">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident, eveniet numquam fugiat voluptate amet assumenda dolorem nobis deleniti necessitatibus labore, neque voluptatum? Inventore accusantium quas nisi tempora laboriosam hic.</p>
-                    <a href="#" class="enlace-comida nav">Reservá ahora en <span>Manolo</span></a>
+                    <a href="#" class="enlace-comida nav">Reservá ahora en <span class="lineaAbajo">Manolo</span></a>
                 </article>
 
                 <div class="imagen"></div>
@@ -91,7 +104,7 @@
                 <article id="art-dos">
                     <h3 class="sub-comida">Tortilla de papa</h3>
                     <p class="par-comida">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident, eveniet numquam fugiat voluptate amet assumenda dolorem nobis deleniti necessitatibus labore, neque voluptatum? Inventore accusantium quas nisi tempora laboriosam hic.</p>
-                    <a href="#" class="enlace-comida nav">Reservá ahora en <span>Plato Profundo</span></a>
+                    <a href="#" class="enlace-comida nav">Reservá ahora en <span class="lineaAbajo">Plato Profundo</span></a>
                 </article>
 
                 <div id="imagen-dos-celular"></div>
@@ -101,7 +114,7 @@
                 <article id="art-tres">
                     <h3 class="sub-comida">Mousse de chocolate</h3>
                     <p class="par-comida">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident, eveniet numquam fugiat voluptate amet assumenda dolorem nobis deleniti necessitatibus labore, neque voluptatum? Inventore accusantium quas nisi tempora laboriosam hic.</p>
-                    <a href="#" class="enlace-comida nav">Reservá ahora en <span>Grill House</span></a>
+                    <a href="#" class="enlace-comida nav">Reservá ahora en <span class="lineaAbajo">Grill House</span></a>
                     
                 </article>
 
@@ -129,5 +142,8 @@
 
     </footer>
 
+    <script src="valida/valida.js"></script>
+
+    
 </body>
 </html>

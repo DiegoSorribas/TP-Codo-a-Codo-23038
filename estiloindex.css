@@ -11,11 +11,31 @@
 /*------- ------*/
 /*estilos header*/
 /*------- ------*/
+
+.flecha_arriba{
+    width: 5px;
+    height: 5px;
+    position: fixed;
+    bottom: 10%;
+    right: 7em;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+header #navegadorbox{
+    place-content: flex-start;
+}
+
+#menuu, #menuu-check{
+    display: none;
+    
+}
+
 .header{
     background-color:#fae9dca8;
     position: sticky;
-    top: 0
-    ;
+    top: 0;
+    z-index: 9999;
 }
 
 #navegadorbox{
@@ -25,11 +45,18 @@
 
 /*agrego hover*/
 
+
+
 .menu {
     display:inline;
     list-style: none;
-    margin: 2em;
+    margin: 0.3em 2em;
     color:#A34032}
+
+#nav{
+    display:flex;
+    flex-wrap: wrap;
+}
     
 .menu :hover{
     color:#006769;
@@ -44,6 +71,8 @@
     color:#A34032;
     font-size: 1.1em;
 }
+
+
 
 #menu-reserva {
     color: #006769;
@@ -76,16 +105,14 @@
 }
 
 #logo {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     margin-left:12em;
     margin-right: 5em;
 }
 
 
-.list{
-    display:flex;
-}
+
 
 
 
@@ -105,13 +132,26 @@
     max-width: 50%;/*marca lo responsive? nunca sobrepasa el 50% en diferentes tamaños*/
 }
 
-h1{                                        /*RECURSO */
+.zoom-in{                                        /*RECURSO */
     text-transform: uppercase;
     color:#ffffff;
     font-size: 4em;
     line-height: 1.2em;
     margin-bottom:0.2em;
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
+
+@keyframes zoomIn {
+    from {transform: scale(0);
+        opacity: 0;}
+
+    to {transform: scale(1);
+        opacity: 1;}
+}
+
+
 
 #parrafounit {
     color: #FAE9DC;
@@ -163,6 +203,17 @@ h1{                                        /*RECURSO */
     position: relative;
     top: 0;
     transition: top ease 0.5s;
+}
+
+.invisible {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .imagen-bene:hover {
@@ -230,10 +281,10 @@ h1{                                        /*RECURSO */
     font-size: 1.2em;
 }
 
-span {color: white;
-position:relative}
+.lineaAbajo {color: white;
+    position:relative}
 
-span:after {
+.lineaAbajo:after {
     content: "";
     position:absolute;
     right:0;
@@ -247,13 +298,16 @@ span:after {
     transition: transform 0.2s ease-in-out;
 }
 
-span:hover:after {
+.lineaAbajo:hover:after {
     transform-origin: left;
     transform: scaleX(1);
     transition: transform 0.2s ease-in-out;
 }
-#propuesta-2 {display:flex;
-background-color: #002b2c;}
+
+#propuesta-2 {
+    display:flex;
+    background-color: #002b2c;
+}
 
 #imagen-dos {
     background: #000 url(./recursos/tortilla.jpg) no-repeat center top;
@@ -261,8 +315,10 @@ background-color: #002b2c;}
     height:700px;
     margin: 0;
 }
-#imagen-dos-celular{width: 0;
-margin: 0;}
+#imagen-dos-celular{
+    width: 0;
+    margin: 0;
+}
 
 
 #art-dos {width:20%}
@@ -294,10 +350,13 @@ margin: 0;}
     padding-bottom: 1em;
     text-align: center;
     padding: 1em;
+    text-transform: uppercase;
 }
 
-#par-bodegones {max-width: 80%;
-padding-bottom: 2em;}
+#par-bodegones {
+    max-width: 80%;
+    padding-bottom: 2em;
+}
 
 .boton-bodegon {
     color:#006769;
@@ -345,11 +404,6 @@ padding-bottom: 2em;}
 .texto-bod{padding-bottom: 3.5em;}
 
 
-/*#contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}*/
 
 .propuesta{display: flex;}
 
@@ -357,7 +411,9 @@ padding-bottom: 2em;}
     background-color: #9c705d;
 }
 
-#celeste {background-color:#002b2c}
+
+#celeste {background-color:#002b2c;}
+
 #azul {background-color: #002b2c;}
 
 #img-1 {
@@ -394,6 +450,7 @@ padding-bottom: 2em;}
     line-height: 1.2em;
     padding-bottom: 1em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #botones {
@@ -597,12 +654,14 @@ color:#000;
     font-weight: 700;
 }
 
+
+
 @media screen and (max-width:876px) {
 
     #navegadorbox{display:block;}
 
     #logo {
-    padding-top: 1.3em;
+    padding: 1.5em;
     display:flex;
     margin:0;
     }
@@ -610,6 +669,10 @@ color:#000;
     #nav {
     display: flex;
     justify-content: center;}
+
+    .menu{
+        padding-bottom: 1em;
+    }
 
     .header {
     position: relative;}
@@ -635,14 +698,18 @@ color:#000;
 
     #imagen-tres {
         background: #000 url(./recursos/mousseTablet.jpg) no-repeat center top;
-        }
+    }
 
-    iframe{width:22em;
-    height: 22em;}
+    iframe{
+        width:22em;
+        height: 22em;
+    }
 
-    #encontranos {width: 100%;
-    display: block;
-    text-align: center;}
+    #encontranos {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
 
     form{width: 70%;}
 
@@ -656,6 +723,122 @@ color:#000;
 
 @media screen and (max-width:584px){
 
+    /*Menú hamburguesa */
+
+    header h1{/* NO AFECTA */
+        margin:0;
+    }
+    header h1 a{/* NO AFECTA */
+        padding:0;
+    }
+    header #navegadorbox{
+        display: flex;
+        place-content: space-between;
+    } 
+
+    header h1{/* NO AFECTA */
+        margin:0;
+    }
+    header h1 a{/* NO AFECTA */
+        padding:0;
+    }
+    header #navegadorbox{
+        display: flex;
+        place-content: space-between;
+    } 
+
+    /*BOTONES EN LA BARRA NAVEGACION*/
+
+    #menuu-check:not(:checked) ~ nav{
+        display: none;
+
+    }
+    #menuu-check:checked ~ nav{
+        display: block;
+
+    }
+    #menuu-abrir{
+        color:#A34032;
+    }
+    #menuu-cerrar{
+        color:#A34032;
+        display: none;
+    }
+    #menuu{
+        display: block;
+        /* background-color: #A34032; */
+        font-size: 1.2em;
+        font-weight: bold;
+        /* border:3px solid #9c705d;
+        border-radius: 0.3em; */
+        position: absolute;
+        right:0.5em;
+        top:2.5em;
+        width: 50px;
+        padding:3px;
+        text-align: center;
+        z-index: 1;
+        
+    }
+    #menuu:hover{
+        color:#A34032;
+        /* background-color:#006769 ; */
+
+    }
+    #menuu-check:checked~label #menuu-abrir{
+        display: none;
+    }
+    #menuu-check:checked~label #menuu-cerrar{
+        display: block;
+    }
+            
+    header #navegadorbox nav #opacidad{
+        position: absolute;
+        /* top:0; */
+        /* margin: 5px; */
+        right:0;
+        height: 100%;
+        /* background-color:rgb(0, 103, 105); */
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        }
+
+
+    header #navegadorbox nav ul, header #navegadorbox nav ul a{
+        color:white;
+        background: none;
+        padding: auto;
+        margin: 10px 25px  ;
+        justify-content: center;
+        
+    }
+    header #navegadorbox nav ul, header #navegadorbox nav ul li {
+        display: block;
+        text-align: center;
+    }
+    header #navegadorbox nav ul a:hover{
+        color: #A34032;
+    }
+
+    #opacidad {
+        display: none;
+        width: 100%;
+        
+        position: absolute;
+        top: 8em;
+        left: 0;
+        background-color:rgb(0, 103, 105);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    
+/* Fin Menú hamburguesa */
+
+
+
+
     .header{
         max-width: 100%;
         position:relative;
@@ -667,13 +850,17 @@ color:#000;
 
     #nav{display:block}
 
-    #logo{display: flex;
-    align-items:center ;
-    margin: 0;
-    padding: 1em;}
+    #logo{
+        display: flex;
+        align-items:center ;
+        margin-left: 1.5em;
+        padding: 1em;
+    }
 
-    .menu{display: inline-grid;
-    margin:1em}
+    .menu{
+        display: inline-grid;
+        margin:1em;
+    }
 
     nav{text-align: center;}
 
@@ -681,36 +868,54 @@ color:#000;
 
     h1{font-size: 2.8em;}
 
-    #textounit{max-width: 100%;
-    padding-top: 20%;}
+    #textounit{
+        max-width: 100%;
+        padding-top: 20%;
+    }
 
-    #parrafounit{max-width: 80%;
-    color: #FAE9DC;
-    font-size: 1.3em;}
+    #parrafounit{
+        max-width: 80%;
+        color: #FAE9DC;
+        font-size: 1.3em;
+    }
 
     #razones {display:block}
 
-    .beneficios{width: 100%;
-    padding-bottom: 1.4em;}
+    .beneficios{
+        width: 100%;
+        padding-bottom: 1.4em;
+    }
+
+    #sub-2 {font-size:1.05em}
+
+    #sub-1 {font-size:1.05em}
+
+    #sub-3 {font-size:1.05em}
 
     #tit-platos {
         font-size: 1.5em;
         padding: 1.3em;}
 
-    #tit-bene{font-size: 1.5em;
-    padding: 1.3em;}
+    #tit-bene{
+        font-size: 1.5em;
+        padding: 1.3em;
+    }
 
     #propuesta1{display: block;}
 
-    .art1{width: 80%;
-    text-align: center;
-    padding-bottom: 2em;}
+    .art1{
+        width: 80%;
+        text-align: center;
+        padding-bottom: 2em;
+    }
 
     .par-comida{text-align: center}
 
-    .sub-comida{font-size: 1.8em;
-    text-align: center;
-    padding-bottom:0.4em;}
+    .sub-comida{
+        font-size: 1.8em;
+        text-align: center;
+        padding-bottom:0.4em;
+    }
 
     .imagen {
         background: #000 url(./recursos/pizzaCelular.jpg) no-repeat center top;
@@ -720,44 +925,64 @@ color:#000;
 
     #propuesta-2{display: block;}
 
-    #art-dos{width: 70%;
-    padding: 2em 0;}
+    #art-dos{
+        width: 70%;
+        padding: 2em 0;
+    }
 
-    .enlace-comida{text-align: center;
+    .enlace-comida{
+        text-align: center;
         justify-content: center;
         font-size: 1em;
         display: grid;}
 
     #imagen-dos{height: 0;}
 
-    #imagen-dos-celular {background: #000 url(./recursos/tortillaCelular.jpg) no-repeat center top;
+    #imagen-dos-celular {
+        background: #000 url(./recursos/tortillaCelular.jpg) no-repeat center top;
         width: 100%;
         height: 300px;
     }
 
     #propuesta-tres{display: block;}
 
-    #art-tres{width: 100%;
-        padding: 2em;}
-
-    #imagen-tres {background: #000 url(./recursos/mousseCelular.jpg) no-repeat center top;
+    #art-tres{
         width: 100%;
-        height: 300px;}
+        padding: 2em;
+    }
 
-    iframe{width:17em;
-        height: 17em;}
+    #imagen-tres {
+        background: #000 url(./recursos/mousseCelular.jpg) no-repeat center top;
+        width: 100%;
+        height: 300px;
+    }
 
-    .list-con{font-size: 1.7em;
-    text-align: center;}
+    iframe{
+        width:17em;
+        height: 17em;
+    }
 
-    #encontranos {display: block;
-    text-align: center;}
 
-    form{width: 100%;}
+    .list-con{
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    #encontranos {
+        display: block;
+        text-align: center;
+    }
+
+    form{
+        width: 100%;
+        padding: 1.5em;
+    }
 
     .circle{margin:1em;}
 
     .btn-enviar{padding: 0.8em 2em}
+
+    .flecha_arriba{display: none;}
 
 }
 @media screen and (max-width:1130px) and (min-width: 876px) {

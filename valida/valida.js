@@ -86,3 +86,31 @@ function validaForm(){
         alert("El formulario contiene fallas que impiden su envío");
     }
 }
+
+const  desplazarArriba = document.querySelector("#flecha_arriba");
+
+desplazarArriba.addEventListener("click", () =>{
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior: "smooth",
+
+    });
+}); 
+
+const elementosBene = document.querySelectorAll('.imagen-bene');
+
+function mostrarElementos() {
+  elementosBene.forEach(elemento => {
+    const posicion = elemento.getBoundingClientRect();
+    const alturaVentana = window.innerHeight;
+    if (posicion.top < alturaVentana) {
+      elemento.classList.add('visible');
+    } else {
+      elemento.classList.remove('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', mostrarElementos);
+mostrarElementos();
