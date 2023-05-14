@@ -75,12 +75,12 @@ header #navegadorbox{
 
 
 #menu-reserva {
-    color: #006769;
+    color: #A34032;
     position: relative;
 }
 
 #menu-reserva:hover{
-    color: #A34032;
+    color: #006769;
     transition: 0.2s ease;
 }
 
@@ -658,6 +658,8 @@ color:#000;
 
 @media screen and (max-width:876px) {
 
+    .zoom-in{font-size: 3.2em;}
+
     #navegadorbox{display:block;}
 
     #logo {
@@ -866,7 +868,8 @@ color:#000;
 
     #herounit{padding-bottom: 25vw;}
 
-    h1{font-size: 2.8em;}
+    .zoom-in{font-size: 2.7em;
+    padding: 0.3em;}
 
     #textounit{
         max-width: 100%;
