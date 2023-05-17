@@ -23,9 +23,9 @@ created(){
     .then(response => response.json())
     .then(data =>{
       const usuario=data.results[0];
-      const nombreCompleto=`${usuario.name.first} `;
-      const nombreCompletoo=`${usuario.name.last}`;
-      const emailCampo=`${usuario.email}`;
+      const nombreCompleto=`Ej. ${usuario.name.first} `;
+      const nombreCompletoo=`Ej. ${usuario.name.last}`;
+      const emailCampo=`Ej. ${usuario.email}`;
     this.name= nombreCompleto;
     this.apellido=nombreCompletoo;
     this.email=emailCampo;
