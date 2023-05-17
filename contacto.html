@@ -50,7 +50,7 @@
                     <h3 class="sub-form">Titular de la reserva</h3>
                     
                         <label for="name" class="block"> Su nombre</label>
-                        <input type="text" name="name" id="name" required placeholder="Ingrese su nombre" class="form">
+                        <input type="text" name="name" id="name"  v-model="name":placeholder="placeholder" class="form" required>
                         <p id="escrito"></p>
 
                         <label for="apellido" class="block"> Su apellido</label>
@@ -61,6 +61,8 @@
                         <input type="email" id="email" name="email" required placeholder="Ingrese su mail" class="form">
                         <p id="meil"></p>
                     
+                        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+                        <script src="./javaScript/scriptVue.js"></script>
                 </section>
                     
                 <section id="momento">
