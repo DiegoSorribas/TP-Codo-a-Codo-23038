@@ -115,13 +115,13 @@ function mostrarElementos() {
 window.addEventListener('scroll', mostrarElementos);
 mostrarElementos();
 //////////////////////
-const {createApp}=Vue;
+// const {createApp}=Vue;
 
-createApp({
-    data(){
-        return{
-            dibujologo: "index.html"
-        }
-    }
+// createApp({
+//     data(){
+//         return{
+//             dibujologo: "index.html"
+//         }
+//     }
     
-}).mount('#navegadorbox');
+// }).mount('#navegadorbox');
