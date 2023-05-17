@@ -8,6 +8,8 @@ createApp( {
     
     return{
         name: '',//agarro dato de la api
+        apellido:'',
+        email:'',
         placeholder:'...'
     };
     
@@ -21,8 +23,12 @@ created(){
     .then(response => response.json())
     .then(data =>{
       const usuario=data.results[0];
-      const nombreCompleto=`${usuario.name.first} ${usuario.name.last}`;
+      const nombreCompleto=`${usuario.name.first} `;
+      const nombreCompletoo=`${usuario.name.last}`;
+      const emailCampo=`${usuario.email}`;
     this.name= nombreCompleto;
+    this.apellido=nombreCompletoo;
+    this.email=emailCampo;
     this.placeholder='Nombre completo';
         // console.log(data)
         // this.name= data.name;
