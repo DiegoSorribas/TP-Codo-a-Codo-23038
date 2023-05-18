@@ -256,7 +256,7 @@ header #navegadorbox{
 
 
 .art1 {
-    width: 20%;/*es ubicacion de la foto*/
+    width: 25%;/*es ubicacion de la foto*/
     text-align: left;
 }
 
@@ -321,7 +321,7 @@ header #navegadorbox{
 }
 
 
-#art-dos {width:20%}
+#art-dos {width:25%}
 
 #propuesta-tres {display:flex;}
 
@@ -332,7 +332,7 @@ header #navegadorbox{
     margin: 0;
 }
 
-#art-tres {width: 20%;}
+#art-tres {width: 25%;}
 
 /*------- ---- --------*/
 /*estilos main bodegones*/
